@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 import { FaCheckCircle } from "react-icons/fa";
 import { MdError } from "react-icons/md";
 
-const verifyUserEmail = () => {
+const VerifyUserEmail = () => {
   const [loading, setLoading] = useState(true);
   const [verification, setVerification] = useState(false);
 
@@ -68,4 +68,4 @@ const verifyUserEmail = () => {
   );
 };
 
-export default verifyUserEmail;
+export default VerifyUserEmail;

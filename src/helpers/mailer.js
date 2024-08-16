@@ -23,7 +23,7 @@ export const sendEmail = async ({ email, emailType, userId }) => {
                             <h1 style="color: #333333; font-size: 24px; margin: 0;">Email Verification</h1>
                             <p style="color: #555555; font-size: 16px; margin: 10px 0 20px;">Please verify your email address by clicking the button below.</p>
                             
-                            <a href="${process.env.DOMAIN}/verifyuseremail" style="display: inline-block; padding: 15px 25px; font-size: 16px; color: #ffffff; background-color: #007bff; text-decoration: none; border-radius: 5px; margin-bottom: 20px;">Verify Email</a>
+                            <a href="${process.env.DOMAIN}/VerifyUserEmail" style="display: inline-block; padding: 15px 25px; font-size: 16px; color: #ffffff; background-color: #007bff; text-decoration: none; border-radius: 5px; margin-bottom: 20px;">Verify Email</a>
                             <p style="color: #555555; font-size: 14px; margin: 0;">If you did not request this email, you can safely ignore it.</p>
                         </td>
                     </tr>

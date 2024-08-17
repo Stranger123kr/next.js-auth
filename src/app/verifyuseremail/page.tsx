@@ -13,9 +13,7 @@ const VerifyUserEmail = () => {
 
   const verifyEmail = async () => {
     try {
-      const { data }: any = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/users/verifyemail`
-      );
+      const { data }: any = await axios.post("/api/users/verifyemail");
       setLoading(false);
       if (data.success === true) {
         toast.success(data.message);

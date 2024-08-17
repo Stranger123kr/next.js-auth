@@ -14,10 +14,7 @@ const Login = () => {
   const submitUserData = async (user: any) => {
     try {
       setLoading(true);
-      const { data } = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/users/login`,
-        user
-      );
+      const { data } = await axios.post("/api/users/login", user);
       setLoading(false);
       if (data.success === true) {
         toast.success(data.message);

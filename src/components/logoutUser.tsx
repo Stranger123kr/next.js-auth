@@ -12,12 +12,9 @@ const LogoutUser = () => {
   const logoutUser = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/users/logout`,
-        {
-          withCredentials: true,
-        }
-      );
+      const { data } = await axios.get("/api/users/logout", {
+        withCredentials: true,
+      });
 
       if (data.success === true) {
         toast.success(data.message);

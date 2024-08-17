@@ -14,12 +14,9 @@ const Profile = () => {
   const getUserData = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/users/userProfile`,
-        {
-          withCredentials: true,
-        }
-      );
+      const { data } = await axios.get("/api/users/userProfile", {
+        withCredentials: true,
+      });
 
       setUser(data.userFound);
       if (!data.userFound.isVerified) {
